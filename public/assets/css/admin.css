@@ -1,0 +1,111 @@
+body {
+  font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+  background: #b3d9ff;
+  color: #222;
+  font-size: 16px;
+}
+
+/* Sidebar Admin */
+nav.bg-dark {
+  border-radius: 18px 18px 24px 24px;
+  box-shadow: 0 4px 32px rgba(13,110,253,0.08), 0 1.5px 6px rgba(0,0,0,0.06);
+  min-height: 100vh;
+  min-width: 220px;
+  padding-top: 2.5rem;
+  position: relative;
+  transition: all .2s;
+}
+
+.admin-avatar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  flex-direction: column;
+}
+.admin-avatar img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  border: 2.5px solid #0d6efd;
+  box-shadow: 0 2px 8px rgba(13,110,253,0.10);
+}
+.admin-avatar .admin-name {
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.nav.flex-column .nav-item {
+  margin-bottom: 0.5rem;
+}
+.nav-link {
+  color: #dbeafe !important;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 0.7em 1.1em;
+  transition: background .16s, color .16s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-link.active, .nav-link:focus, .nav-link:hover {
+  background: linear-gradient(90deg, #0d6efd 60%, #1e90ff 100%);
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(13,110,253,0.08);
+  font-weight: 600;
+}
+.nav-link.text-danger {
+  background: none !important;
+  color: #ff4d4f !important;
+}
+
+/* Responsive sidebar: ẩn trên mobile, hiện nút mở */
+@media (max-width: 991px) {
+  nav.bg-dark {
+    display: none;
+  }
+  .sidebar-toggle-btn {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 999;
+    background: #3b84f0;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    box-shadow: 0 2px 8px rgba(13,110,253,0.13);
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 991px) {
+  main.p-4 {
+    padding-left: 0 !important;
+  }
+}
+
+/* Main content spacing */
+main.p-4 {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  margin: 2rem 0 2rem 2rem;
+  min-height: 90vh;
+}
+
+/* Hiệu ứng chung */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #f2f2f2;
+}
+::-webkit-scrollbar-thumb {
+  background: #e0e7ef;
+  border-radius: 6px;
+}
+

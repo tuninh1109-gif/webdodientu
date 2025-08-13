@@ -1,0 +1,26 @@
+/* Style cho trang tìm kiếm sản phẩm */
+.product-card {
+  transition: box-shadow .2s, transform .2s;
+}
+.product-card:hover {
+  box-shadow: 0 8px 32px #0077ff22;
+  transform: translateY(-4px) scale(1.03);
+  border: 1.5px solid #3b84f0;
+}
+.product-thumb {
+  background: #f3faff;
+  border-bottom: 1px solid #e3f0ff;
+}
+.btn-view-detail {
+  background: linear-gradient(90deg,#1fa2ff,#12d8fa,#a6ffcb);
+  color: #003366;
+  font-weight: 600;
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 8px #0091ea11;
+  transition: background .2s;
+}
+.btn-view-detail:hover {
+  background: linear-gradient(90deg,#12d8fa,#1fa2ff);
+  color: #fff;
+}

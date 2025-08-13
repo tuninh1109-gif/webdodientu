@@ -1,0 +1,31 @@
+/* Style cho giao diện chọn phương thức thanh toán giống Shopee */
+.pay-method-card {
+  border: 2px solid #e3f0ff;
+  border-radius: 14px;
+  padding: 14px 18px;
+  background: #fff;
+  cursor: pointer;
+  transition: border 0.18s, box-shadow 0.18s;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.pay-method-card input:checked + .pay-method-content,
+.pay-method-card input:focus + .pay-method-content {
+  border-color: #1976d2;
+  box-shadow: 0 2px 12px #90caf911;
+}
+.pay-method-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.pay-method-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+.pay-method-card input:checked + .pay-method-content {
+  background: #e3f0ff;
+  border-radius: 10px;
+}
