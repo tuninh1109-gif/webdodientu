@@ -89,9 +89,9 @@ class ContactController {
                 $mail->isSMTP();
                 $mail->Host = 'smtp.gmail.com';
                 $mail->SMTPAuth = true;
-                $mail->Username = 'tuninh1109@gmail.com'; 
-                $mail->Password = 'lazyiboazbpomzmw';    
-                $mail->setFrom('tuninh1109@gmail.com', 'HihiMart');       
+                $mail->Username = 'abc@gmail.com'; 
+                $mail->Password = 'xyz';    
+                $mail->setFrom('abc@gmail.com', 'HihiMart');       
                 $mail->SMTPSecure = \PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
                 $mail->Port = 587;
                 $mail->CharSet = 'UTF-8';
